@@ -1,0 +1,19 @@
+git:
+  paging:
+    colorArg: always
+    pager: delta --light --paging=never --side-by-side
+    # useConfig: true
+
+  branchLogCmd: git log --graph --color=always --all --pretty=format:"%C(auto,yellow)%h%C(auto,magenta)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(7,trunc)%aN%C(auto,reset)%s%C(auto,red)% gD% D"
+  # branchLogCmd: 'git log --graph --color=always --all --pretty=format:"%C(auto,yellow)%h%C(auto,magenta)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(7,trunc)%aN%C(auto,reset)%s%C(auto,red)% gD% D"'
+  # branchLogCmd: "git log --graph --color=always --oneline --all"
+  # branchLogCmd: "git log --graph --color=always --pretty=medium --all"
+  # branchLogCmd: tig
+# branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium {{branchName}} --"
+# branchLogCmd: "git log --graph --color=always --oneline --all --decorate --date=relative --pretty=medium {{branchName}} --"
+# gui:
+# paging:
+#   useConfig: true
+#   colorArg: always
+#   pager: delta --light --paging=never --side-by-side
+# showIcons:true
