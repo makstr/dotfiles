@@ -8,6 +8,8 @@ alias gt="git log --graph --oneline --all"
 alias gtr="git log --graph --pretty=medium --all"
 alias gdss="git diff --shortstat"
 
+alias pn="pnpm"
+
 if docker info >/dev/null 2>&1; then
 	alias drc="docker-compose"
 	alias drcrun="docker-compose run --rm"
