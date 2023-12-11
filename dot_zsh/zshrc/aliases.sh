@@ -16,6 +16,15 @@ if docker info >/dev/null 2>&1; then
 	alias dexec="docker exec -it"
 	alias dcps="docker ps | less -S"
 
+	dps() {
+
+		# http://mando.github.io/2016/02/05/docker-ps-formatting.html
+
+		docker ps --format="table {{.Image}}\t{{.Ports}}\t{{.Status}}\t{{.Names}}" $@
+		#        docker ps --format="table {{.Image}}\t{{.Status}}\t{{.Names}}" $@
+		#docker ps --format="table {{.Image}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}" $@
+	}
+
 	docker_stop_all() {
 		docker stop $(docker ps -a -q)
 	}
