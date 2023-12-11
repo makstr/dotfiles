@@ -14,6 +14,7 @@ if docker info >/dev/null 2>&1; then
 	alias drc="docker-compose"
 	alias drcrun="docker-compose run --rm"
 	alias dexec="docker exec -it"
+	alias dcps="docker ps | less -S"
 
 	docker_stop_all() {
 		docker stop $(docker ps -a -q)
